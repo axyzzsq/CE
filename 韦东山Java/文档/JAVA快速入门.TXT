@@ -1,0 +1,113 @@
+参考书籍: Java开发实战经典, 李兴华著
+
+第一课 Java基础
+1. ubuntu上环境搭建 (建议使用我们提供的VMWare映象文件)
+   如果要自己安装ubuntu, 请参考<韦东山Android系统视频使用手册.pdf>
+   ubuntu 12.04.5 这是一个长期支持的版本
+   硬盘空间至少预留80G
+a. root分区 : 20G, 从其中划出6G用作swap
+b. work分区 : 60G
+c. 内存 : 4G
+
+安装Java开发环境
+sudo apt-get update
+sudo apt-get install openjdk-7-jdk
+sudo apt-get install openjdk-7-jre
+
+2. 第1个JAVA程序 (和C对比)
+
+3. JAVA数据类型
+   基本数据类型：boolean, byte, char, short, int, long, float, double
+   引用数据类型：数组、类对象
+   栈内存、堆内存
+   数据类型转换(自动转换, 强制转换)
+   
+4. 语句：跟C完全一样
+     
+5. 方法(函数)
+
+6. 方法重载、参数传递
+
+第二课 面向对象程序设计
+1. 类的引入
+C语言是面向过程的
+出一道题：写一个程序，输出张三、李四两个人的姓名
+
+
+2. 封装性
+
+3. 继承性
+
+4. 多态性
+
+5. 异常
+参考文章: 
+深入理解java异常处理机制 
+http://blog.csdn.net/hguisu/article/details/6155636
+
+
+6. 包和权限
+javac A.java // 将在当前目录下生成A.class
+能否把这些class文件存放于其他目录呢？
+
+jar -cvf my.jar   a   // 把包a创建为压缩文件my.jar
+
+export CLASSPATH=.:my.jar
+
+7. 内部类
+
+
+
+第三课 JNI (Java Native Interface)
+1. JAVA调用C
+Linux是用C语言写的，可以写一个APP简单调用open,read,write来访问驱动程序;
+Android是用Java写的，Java怎么访问C函数？
+
+jni.pdf P117
+
+Android JNI知识简介
+http://blog.csdn.net/linweig/article/details/5417319
+
+Android JNI（实现自己的JNI_OnLoad函数）
+http://jjf19850615.blog.163.com/blog/static/356881472013342153912/
+
+
+查看"JNI field descriptors" (JNI字段描述符)
+javap -s -p Var.class 
+JNINativeMethod的参数解析
+http://carywei.iteye.com/blog/1075647
+http://cs.fit.edu/~ryan/java/language/jni.html
+http://blog.csdn.net/conowen/article/details/7524744
+
+
+2. C调用JAVA
+jni.pdf P97
+
+http://blog.csdn.net/lhzjj/article/details/26470999
+
+4步骤:
+a. 创建虚拟机
+b. 获得class
+c. 实例化对象 : 获得构造方法(方法名为"<init>"), 构造参数, 调用方法
+d. 调用方法   : 又分为获得方法, 构造参数, 调用方法
+
+读取/设置类中的属性:
+a. 获得属性ID
+b. 读取/设置
+
+
+
+第四课 JAVA高级应用
+1. 泛型(Generics)
+
+2. 反射(Reflect)
+
+
+
+
+
+微信订阅号: baiwenkeji
+官方微博  ：百问科技
+个人微博  ：韦东山
+
+
