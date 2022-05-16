@@ -11,3 +11,12 @@
 
 - 原书第10版本 PDF
 	- [网盘链接](https://pan.baidu.com/s/1zRbGqTEjK_AT84LMBG5dLg ) 提取码：uxkb 
+
+
+
+## 3. 韦东山 Java快速入门
+
+- [百问网-韦东山 Java](https://www.100ask.net/detail/p_5e622909b301e_iuTK5NNB/8)
+- [百度网盘链接](https://pan.baidu.com/s/1TCSKdijSNL_9YcawAAiIbw )
+	- 提取码:fbiw 
+
