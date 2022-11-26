@@ -1,7 +1,0 @@
-
-
-package b;
-
-class Mymath {
-}
-
